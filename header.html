@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsen - Mini Collection</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="header.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div
+      class="top-bar py-2"
+      style="background: #27b6d2; color: #fff; font-size: 1rem"
+    >
+      <div class="container-fluid px-4">
+        <div class="row align-items-center">
+          <div class="col d-flex align-items-center gap-3">
+            <span><i class="fa-solid fa-phone"></i>+1-202-555-0184</span>
+            <span class="topbar-divider"></span>
+            <span
+              ><i class="fa-regular fa-envelope"></i> support@unsen.com</span
+            >
+          </div>
+          <div
+            class="col text-end d-flex align-items-center justify-content-end gap-3"
+          >
+            <div class="topbar-dropdown me-2" id="langDropdown">
+              <span
+                class="topbar-dropdown-toggle"
+                onclick="toggleDropdown('langDropdownMenu')"
+                >English <i class="fa-solid fa-caret-down"></i
+              ></span>
+              <div class="topbar-dropdown-menu" id="langDropdownMenu">
+                <div class="dropdown-item" onclick="setLanguage('en')">
+                  <img src="https://flagcdn.com/us.svg" /> English
+                </div>
+                <div class="dropdown-item" onclick="setLanguage('vi')">
+                  <img src="https://flagcdn.com/vn.svg" /> Tiếng Việt
+                </div>
+              </div>
+            </div>
+            <div class="topbar-dropdown me-2" id="currencyDropdown">
+              <span
+                class="topbar-dropdown-toggle"
+                onclick="toggleDropdown('currencyDropdownMenu')"
+                ><img
+                  src="https://flagcdn.com/us.svg"
+                  style="vertical-align: middle" />
+                USD<i class="fa-solid fa-caret-down"></i
+              ></span>
+              <div class="topbar-dropdown-menu" id="currencyDropdownMenu">
+                <div class="dropdown-item">
+                  <img src="https://flagcdn.com/fr.svg" /> France
+                  <span class="currency">- EUR €</span>
+                </div>
+                <div class="dropdown-item">
+                  <img src="https://flagcdn.com/jp.svg" /> Japan
+                  <span class="currency">- USD $</span>
+                </div>
+                <div class="dropdown-item">
+                  <img src="https://flagcdn.com/kr.svg" /> South Korea
+                  <span class="currency">- KRW ₩</span>
+                </div>
+                <div class="dropdown-item active">
+                  <img src="https://flagcdn.com/us.svg" /> United States
+                  <span class="currency">- USD $</span>
+                </div>
+              </div>
+            </div>
+            <span class="topbar-divider"></span>
+            <span class="d-none d-md-inline">
+              <a href="#" class="topbar-icon-link facebook"><i class="fab fa-facebook-f mx-1"></i></a>
+              <a href="#" class="topbar-icon-link twitter"><i class="fab fa-x-twitter mx-1"></i></a>
+              <a href="#" class="topbar-icon-link pinterest"><i class="fab fa-pinterest-p mx-1"></i></a>
+              <a href="#" class="topbar-icon-link telegram"><i class="fab fa-telegram-plane mx-1"></i></a>
+              <a href="#" class="topbar-icon-link email"><i class="fa-solid fa-envelope mx-1"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container-fluid px-4 d-flex r">
+        <a class="navbar-brand me-4" href="/trangchu.html">
+          <img
+            src="images/logo_new_black.svg"
+            alt="Unsen Logo"
+            style="width: 100px"
+          />
+        </a>
+        <ul
+          class="navbar-nav flex-row align-items-center gap-3 mb-0"
+          style="flex: 1"
+        >
+          <li class="nav-item">
+            <a class="nav-link nav-main" href="#">DEMO</a>
+          </li>
+          <li class="nav-item d-flex align-items-center gap-1">
+            <a class="nav-link nav-main" href="#">FEATURES</a>
+            <span class="badge bg-success nav-badge">New</span>
+          </li>
+          <li class="nav-item d-flex align-items-center gap-1">
+            <a class="nav-link nav-main" href="#">SHOP</a>
+            <span class="badge bg-danger nav-badge">Hot</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-main" href="#">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-main" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-main" href="#">LOOKBOOK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-main" href="#">PAGES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-main" href="#">BUY THEME</a>
+          </li>
+        </ul>
+        <div class="icons d-flex align-items-center" style="gap: 2.2rem">
+          <span class="icon-wrap"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <span class="icon-wrap"><i class="fa-regular fa-user"></i></span>
+          <span class="icon-wrap position-relative"
+            ><i class="fa-regular fa-heart"></i
+            ><span class="icon-badge">1</span></span
+          >
+          <span class="icon-wrap position-relative"
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><span class="icon-badge">0</span></span
+          >
+        </div>
+      </div>
+    </nav>
+    <script>
+      function toggleDropdown(id) {
+        document.querySelectorAll(".topbar-dropdown-menu").forEach((e) => {
+          if (e.id !== id) e.classList.remove("show");
+        });
+        document.getElementById(id).classList.toggle("show");
+      }
+      document.addEventListener("click", function (e) {
+        if (!e.target.closest(".topbar-dropdown")) {
+          document
+            .querySelectorAll(".topbar-dropdown-menu")
+            .forEach((e) => e.classList.remove("show"));
+        }
+      });
+      function setLanguage(lang) {
+        toggleDropdown("langDropdownMenu");
+      }
+      const dropdowns = document.querySelectorAll(".topbar-dropdown-menu");
+      dropdowns.forEach((menu) => {
+        menu.style.left = "unset";
+        menu.style.right = "0";
+      });
+    </script>
+  </body>
+</html>
