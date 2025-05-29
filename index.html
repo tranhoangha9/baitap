@@ -1,57 +1,136 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+  </head>
+  <body>
     <div id="header-placeholder"></div>
 
     <main>
-        <div class="main-carousel" data-flickity='{ "wrapAround": true, "autoPlay": 5000, "prevNextButtons": false, "pageDots": false }'>
-            <div class="carousel-cell">
-                <img src="images/anh1.jpg" alt="Image 1">
-                <div class="carousel-text d-flex flex-column h-100">
-                    <h1 class="display-4 ">Mini <br> Collection</h1>
-                    <a href="#" class="shop-link">Shop Collection</a>
-                    <p class="product-info mt-3">Miley Triangle Hair Scarf <span></span>$2200</p>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <img src="images/anh2.jpg" alt="Image 2">
-                <div class="carousel-text d-flex flex-column h-100">
-                    <h1 class="display-4 ">Mini <br> Collection</h1>
-                    <a href="#" class="shop-link">Shop Collection</a>
-                    <p class="product-info mt-3">Essentials Jumpman Boxy T-Shirt <span></span>$3900</p>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <img src="images/anh3.jpg" alt="Image 3">
-                <div class="carousel-text d-flex flex-column h-100">
-                    <h1 class="display-4 ">Mini <br> Collection</h1>
-                    <a href="#" class="shop-link">Shop Collection</a>
-                    <p class="product-info mt-3">Simona Ribbed Cardigan <span></span>$8200</p>
-                </div>
-            </div>
+      <div
+        class="main-carousel"
+        data-flickity='{ "wrapAround": true, "autoPlay": 5000, "prevNextButtons": false, "pageDots": false }'>
+        <div class="carousel-cell">
+          <img src="assets/images/anh1.jpg" alt="Image 1" />
+          <div class="carousel-text d-flex flex-column h-100">
+            <h1 class="display-4">
+              Mini <br/>
+              Collection
+            </h1>
+            <a href="#" class="shop-link">Shop Collection</a>
+            <p class="product-info mt-3">
+              Miley Triangle Hair Scarf <span></span>$22.00
+            </p>
+          </div>
         </div>
+        <div class="carousel-cell">
+          <img src="assets/images/anh2.jpg" alt="Image 2" />
+          <div class="carousel-text d-flex flex-column h-100">
+            <h1 class="display-4">
+              Mini <br/>
+              Collection
+            </h1>
+            <a href="#" class="shop-link">Shop Collection</a>
+            <p class="product-info mt-3">
+              Essentials Jumpman Boxy T-Shirt <span></span>$39.00
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="assets/images/anh3.jpg" alt="Image 3" />
+          <div class="carousel-text d-flex flex-column h-100">
+            <h1 class="display-4">
+              Mini <br/>
+              Collection
+            </h1>
+            <a href="#" class="shop-link">Shop Collection</a>
+            <p class="product-info mt-3">
+              Simona Ribbed Cardigan <span></span>$82.00
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <section class="features-section py-4 bg-white border-bottom">
+      <div class="container-fluid px-0">
+        <div class="row g-0">
+          <div class="col-12 col-md-3 d-flex align-items-stretch">
+            <div
+              class="d-flex flex-row align-items-center justify-content-center w-100 h-100 feature-box"
+            >
+              <i class="fa-solid fa-truck me-3"></i>
+              <div class="feature-text text-start">
+                <div class="letter-title">Shipping Worldwide</div>
+                <div class="text-muted">
+                  Free shipping on all US order or<br />order above $100
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 d-flex align-items-stretch">
+            <div
+              class="d-flex flex-row align-items-center justify-content-center w-100 h-100 feature-box"
+            >
+              <i class="fa-solid fa-rotate-left me-3"></i>
+              <div class="feature-text text-start">
+                <div class="letter-title">14 Days Return</div>
+                <div class="text-muted">
+                  Simply return it within 30 days for<br />an exchange.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 d-flex align-items-stretch">
+            <div
+              class="d-flex flex-row align-items-center justify-content-center w-100 h-100 feature-box"
+            >
+              <i class="fa-solid fa-shield-halved me-3"></i>
+              <div class="feature-text text-start">
+                <div class="letter-title">Security Payment</div>
+                <div class="text-muted">
+                  We ensure secure payment<br />with PEV
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 d-flex align-items-stretch">
+            <div
+              class="d-flex flex-row align-items-center justify-content-center w-100 h-100 feature-box"
+            >
+              <i class="fa-solid fa-headset me-3"></i>
+              <div class="feature-text text-start">
+                <div class="feature-title">24/7 Support</div>
+                <div class="text-muted">
+                  Contact us 24 hours a day, 7 days<br />a week
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div id="footer-placeholder"></div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="load_hd_ft.js"></script>
-
+    <script src="assets/js/load_hd_ft.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-</body>
+  </body>
 </html>
-
