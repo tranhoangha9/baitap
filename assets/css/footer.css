@@ -21,147 +21,118 @@ main {
     padding: 4rem 0.5rem 0;
     flex-shrink: 0;
 }
-
-/* Brand section */
 .footer-logo img {
     width: 100px;
     height: auto;
 }
-
 .footer-desc {
     color: #666;
     line-height: 1.6;
     font-size: 0.875rem;
 }
-
 .footer-contact {
     margin-bottom: 1.5rem;
 }
-
-.footer-contact p {
+.footer-contact  {
     color: #666;
     font-size: 0.875rem;
     margin-bottom: 0.3rem;
 }
-
 .footer-contact .address {
     display: flex;
     gap: 0.5rem;
     align-items: flex-start;
 }
-
 .footer-contact .address i {
     margin-top: 0.3rem;
     font-size: 0.875rem;
 }
-
-/* Social links */
 .social-links {
     display: flex;
     gap: 1.5rem;
     position: relative;
     top: -1rem;
 }
-
 .social-link {
     color: #4f4949;
     transition: transform 0.2s;
     font-size: 1rem;
 }
-
 .social-link:hover {
     color: #000;
     transform: translateY(-3px);
 }
-
-/* Footer columns */
 .footer-title {
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-/* Footer links */
 .footer-links {
     list-style: none;
     padding: 0;
 }
-
 .footer-links li {
     margin-bottom: 0.5rem;
 }
-
 .footer-links a {
     color: #666;
     text-decoration: none;
     transition: color 0.2s;
     font-size: 0.875rem;
 }
-
-/* Newsletter form */
 .newsletter-text {
     font-size: 0.875rem;
     color: #666;
     margin-bottom: 1rem;
 }
-
 .newsletter-form .input-group {
     border: 1px solid #ddd;
     border-radius: 0;
     overflow: hidden;
 }
-
 .newsletter-form .form-control {
     border: none;
     background: #f7f7f7;
     font-size: 0.875rem;
     padding: 0.75rem 1rem;
 }
-
 .newsletter-form .form-control:focus {
     box-shadow: none;
 }
-
 .newsletter-form .btn {
     border-radius: 0;
     background: #000;
     padding: 0.75rem 1.25rem;
 }
-
 .newsletter-form .btn:hover {
     background: #333;
 }
-
 /* Footer bottom */
 .footer-bottom {
     border-top: 1px solid #eee;
     padding: 1rem 0;
     margin-top: 0.5rem;
 }
-
 .footer-bottom .container-fluid {
     padding: 0 1.5rem;
 }
-
 .copyright {
     color: #666;
     font-size: 0.875rem;
     margin: 0;
     letter-spacing: 0.02em;
 }
-
 .copyright a {
     color: #000;
     text-decoration: none;
 }
-
 .footer-bottom .footer-links {
     display: flex;
     gap: 2rem;
     justify-content: center;
     margin: 0;
 }
-
 .footer-bottom .footer-links a {
     font-size: 0.875rem;
     color: #000000;
@@ -170,31 +141,20 @@ main {
     font-weight: 500;
     letter-spacing: 0.03em;
 }
-
 .footer-bottom .footer-links a:hover {
     color: #000;
 }
-
 .payment-methods {
     height: 12px;
     width: auto;
 }
-
-/* Instagram section */
-.instagram-gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .instagram-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
-
     .footer {
         padding: 3rem 0 0;
     }
-
     .footer-bottom {
         margin-top: 1.5rem;
     }
@@ -204,17 +164,14 @@ main {
     .instagram-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
-
     .footer {
         padding: 2rem 0 0;
     }
-
     .footer-bottom {
         margin-top: 1rem;
     }
-
     .footer-bottom .footer-links {
         gap: 1rem;
         flex-wrap: wrap;
     }
-}
+} */

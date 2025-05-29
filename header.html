@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
   </head>
   <body>
     <!-- Top Bar -->
@@ -105,34 +105,69 @@
       <div class="container-fluid px-4 d-flex r">
         <a class="navbar-brand me-4" href="/index.html">
           <img
-            src="images/logo_new_black.svg"
+            src="assets/images/logo_new_black.svg"
             alt="Unsen Logo"
             class="logo-img"
           />
         </a>
         <ul class="navbar-nav flex-row align-items-center gap-3 mb-0">
-          <li class="nav-item">
-            <a class="nav-link nav-main" href="#demo">DEMO</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-main dropdown-toggle no-caret" href="#demo" id="demoDropdown" role="button">DEMO</a>
+            <ul class="dropdown-menu" aria-labelledby="demoDropdown">
+              <li><a class="dropdown-item" href="#">Demo 1</a></li>
+              <li><a class="dropdown-item" href="#">Demo 2</a></li>
+              <li><a class="dropdown-item" href="#">Demo 3</a></li>
+            </ul>
           </li>
-          <li class="nav-item d-flex align-items-center gap-1">
-            <a class="nav-link nav-main" href="#features">FEATURES</a>
+          <li class="nav-item dropdown d-flex align-items-center gap-1">
+            <a class="nav-link nav-main dropdown-toggle no-caret" href="#features" id="featuresDropdown" role="button">FEATURES</a>
             <span class="badge nav-badge new">New</span>
+            <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+              <li><a class="dropdown-item" href="#">Feature 1</a></li>
+              <li><a class="dropdown-item" href="#">Feature 2</a></li>
+              <li><a class="dropdown-item" href="#">Feature 3</a></li>
+            </ul>
           </li>
-          <li class="nav-item d-flex align-items-center gap-1">
-            <a class="nav-link nav-main" href="#shop">SHOP</a>
+          <li class="nav-item dropdown d-flex align-items-center gap-1">
+            <a class="nav-link nav-main dropdown-toggle no-caret" href="#shop" id="shopDropdown" role="button">SHOP</a>
             <span class="badge nav-badge hot">Hot</span>
+            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+              <li><a class="dropdown-item" href="#">Shop 1</a></li>
+              <li><a class="dropdown-item" href="#">Shop 2</a></li>
+              <li><a class="dropdown-item" href="#">Shop 3</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-main" href="#products">PRODUCTS</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-main dropdown-toggle no-caret" href="#products" id="productsDropdown" role="button">PRODUCTS</a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="#">Product 1</a></li>
+              <li><a class="dropdown-item" href="#">Product 2</a></li>
+              <li><a class="dropdown-item" href="#">Product 3</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-main" href="#blog">BLOG</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-main dropdown-toggle no-caret" href="#blog" id="blogDropdown" role="button">BLOG</a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="#">Blog 1</a></li>
+              <li><a class="dropdown-item" href="#">Blog 2</a></li>
+              <li><a class="dropdown-item" href="#">Blog 3</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-main" href="#lookbook">LOOKBOOK</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-main dropdown-toggle no-caret" href="#lookbook" id="lookbookDropdown" role="button">LOOKBOOK</a>
+            <ul class="dropdown-menu" aria-labelledby="lookbookDropdown">
+              <li><a class="dropdown-item" href="#">Shop The Look</a></li>
+              <li><a class="dropdown-item" href="#">Lookbook Slider</a></li>
+              <li><a class="dropdown-item" href="#">Lookbook Section</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-main" href="#pages">PAGES</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-main dropdown-toggle no-caret" href="#pages" id="pagesDropdown" role="button">PAGES</a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="#">Page 1</a></li>
+              <li><a class="dropdown-item" href="#">Page 2</a></li>
+              <li><a class="dropdown-item" href="#">Page 3</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link nav-main" href="#buy">BUY THEME</a>
@@ -303,5 +338,6 @@
         });
       });
     </script>
+
   </body>
 </html>
