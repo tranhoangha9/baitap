@@ -60,7 +60,7 @@
 }
 
 /* Navbar */
-.navbar {
+#header-placeholder .navbar {
   background: #fff;
   border-bottom: 1px solid #eee;
   padding-top: 1.5rem;
@@ -75,7 +75,7 @@
   margin-left: 3rem;
 }
 .navbar-brand img {
-  width: 120px;
+  width: 100px;
   display: block;
 }
 .navbar-nav {
@@ -110,7 +110,7 @@
   z-index: 2;
 }
 .icons {
-  gap: 1.2rem !important;
+  gap: 2.2rem !important;
   margin-right: 4.2rem !important;
 }
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link CSS files -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="main-carousel" data-flickity='{ "wrapAround": true, "autoPlay": 5000, "prevNextButtons": false, "pageDots": false }'>
+            <div class="carousel-cell">
+                <img src="images/anh1.jpg" alt="Image 1">
+                <div class="carousel-text d-flex flex-column h-100">
+                    <h1 class="display-4 ">Mini <br> Collection</h1>
+                    <a href="#" class="shop-link">Shop Collection</a>
+                    <p class="product-info mt-3">Miley Triangle Hair Scarf <span></span>$2200</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/anh2.jpg" alt="Image 2">
+                <div class="carousel-text d-flex flex-column h-100">
+                    <h1 class="display-4 ">Mini <br> Collection</h1>
+                    <a href="#" class="shop-link">Shop Collection</a>
+                    <p class="product-info mt-3">Essentials Jumpman Boxy T-Shirt <span></span>$3900</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/anh3.jpg" alt="Image 3">
+                <div class="carousel-text d-flex flex-column h-100">
+                    <h1 class="display-4 ">Mini <br> Collection</h1>
+                    <a href="#" class="shop-link">Shop Collection</a>
+                    <p class="product-info mt-3">Simona Ribbed Cardigan <span></span>$8200</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="load_hd_ft.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
+

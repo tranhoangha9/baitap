@@ -20,10 +20,14 @@
       <div class="container-fluid px-4">
         <div class="row align-items-center">
           <div class="col d-flex align-items-center gap-3">
-            <span><i class="fa-solid fa-phone"></i>+1-202-555-0184</span>
+            <a href=""
+              ><span><i class="fa-solid fa-phone"></i>+1-202-555-0184</span></a
+            >
             <span class="topbar-divider"></span>
-            <span
-              ><i class="fa-regular fa-envelope"></i> support@unsen.com</span
+            <a href=""
+              ><span
+                ><i class="fa-regular fa-envelope"></i> support@unsen.com</span
+              ></a
             >
           </div>
           <div
@@ -47,7 +51,8 @@
             <div class="topbar-dropdown me-2" id="currencyDropdown">
               <span
                 class="topbar-dropdown-toggle"
-                onclick="toggleDropdown('currencyDropdownMenu')">
+                onclick="toggleDropdown('currencyDropdownMenu')"
+              >
                 <img
                   src="https://flagcdn.com/us.svg"
                   style="vertical-align: middle"
@@ -98,16 +103,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white border-bottom">
       <div class="container-fluid px-4 d-flex r">
-        <a class="navbar-brand me-4" href="/trangchu.html">
+        <a class="navbar-brand me-4" href="/index.html">
           <img
             src="images/logo_new_black.svg"
             alt="Unsen Logo"
-            style="width: 100px"
+            class="logo-img"
           />
         </a>
-        <ul
-          class="navbar-nav flex-row align-items-center gap-3 mb-0"
-        >
+        <ul class="navbar-nav flex-row align-items-center gap-3 mb-0">
           <li class="nav-item">
             <a class="nav-link nav-main" href="#demo">DEMO</a>
           </li>
@@ -135,11 +138,13 @@
             <a class="nav-link nav-main" href="#buy">BUY THEME</a>
           </li>
         </ul>
-        <div class="icons d-flex align-items-center" style="gap: 2.2rem">
+        <div class="icons d-flex align-items-center">
           <a href="#search" class="icon-wrap" id="searchIcon"
             ><i class="fa-solid fa-magnifying-glass"></i
           ></a>
-          <a href="#account" class="icon-wrap"><i class="fa-regular fa-user"></i></a>
+          <a href="#account" class="icon-wrap"
+            ><i class="fa-regular fa-user"></i
+          ></a>
           <a href="#wishlist" class="icon-wrap position-relative"
             ><i class="fa-regular fa-heart"></i
             ><span class="icon-badge">1</span></a
@@ -188,14 +193,14 @@
               <a href="#" class="return-btn">ADD ITEMS</a>
             </div>
           </div>
-          <!-- Recently Viewed Tab -->
+
           <div class="cart-tab-content" id="recentlyTab">
             <div class="empty-cart">
               <p>No recently viewed items.</p>
               <a href="#" class="return-btn">BROWSE PRODUCTS</a>
             </div>
           </div>
-          <!-- Shopping Cart Tab -->
+
           <div class="cart-tab-content" id="cartTab">
             <div class="empty-cart">
               <p>Your cart is empty.</p>
@@ -204,7 +209,6 @@
           </div>
         </div>
       </div>
-      
     </nav>
     <div class="cart-overlay" id="cartOverlay"></div>
     <script>
@@ -231,45 +235,45 @@
       });
 
       // Cart functionality
-      const cartIcon = document.getElementById('cartIcon');
-      const cartSection = document.getElementById('cartSection');
-      const closeCart = document.getElementById('closeCart');
-      const cartOverlay = document.getElementById('cartOverlay');
+      const cartIcon = document.getElementById("cartIcon");
+      const cartSection = document.getElementById("cartSection");
+      const closeCart = document.getElementById("closeCart");
+      const cartOverlay = document.getElementById("cartOverlay");
 
-      cartIcon.addEventListener('click', function(e) {
+      cartIcon.addEventListener("click", function (e) {
         e.preventDefault();
-        cartSection.classList.add('show');
-        cartOverlay.classList.add('show');
-        document.body.style.overflow = 'hidden';
+        cartSection.classList.add("show");
+        cartOverlay.classList.add("show");
+        document.body.style.overflow = "hidden";
       });
 
       function closeCartSection() {
-        cartSection.classList.remove('show');
-        cartOverlay.classList.remove('show');
-        document.body.style.overflow = '';
+        cartSection.classList.remove("show");
+        cartOverlay.classList.remove("show");
+        document.body.style.overflow = "";
       }
 
-      closeCart.addEventListener('click', closeCartSection);
-      cartOverlay.addEventListener('click', closeCartSection);
+      closeCart.addEventListener("click", closeCartSection);
+      cartOverlay.addEventListener("click", closeCartSection);
 
       // Cart tab functionality
-      const cartTabs = document.querySelectorAll('.cart-tab');
-      const cartContents = document.querySelectorAll('.cart-tab-content');
+      const cartTabs = document.querySelectorAll(".cart-tab");
+      const cartContents = document.querySelectorAll(".cart-tab-content");
 
-      cartTabs.forEach(tab => {
-        tab.addEventListener('click', (e) => {
+      cartTabs.forEach((tab) => {
+        tab.addEventListener("click", (e) => {
           e.preventDefault();
-          
+
           // Remove active class from all tabs and contents
-          cartTabs.forEach(t => t.classList.remove('active'));
-          cartContents.forEach(c => c.classList.remove('active'));
-          
+          cartTabs.forEach((t) => t.classList.remove("active"));
+          cartContents.forEach((c) => c.classList.remove("active"));
+
           // Add active class to clicked tab
-          tab.classList.add('active');
-          
+          tab.classList.add("active");
+
           // Show corresponding content
-          const tabId = tab.getAttribute('data-tab') + 'Tab';
-          document.getElementById(tabId).classList.add('active');
+          const tabId = tab.getAttribute("data-tab") + "Tab";
+          document.getElementById(tabId).classList.add("active");
         });
       });
     </script>
