@@ -95,12 +95,12 @@ main {
   gap: 0.05rem !important;
   justify-content: flex-start !important;
 }
-.features-section i {
+.features-section .feature-box i {
   font-size: 3rem;
   color: #222;
   min-width: 48px;
 }
-.features-section .feature-box:hover i {
+.features-section .feature-box i:hover {
   animation: icon-flicker 0.5s cubic-bezier(.4,0,.2,1);
 }
 @keyframes icon-flicker {
