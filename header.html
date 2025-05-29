@@ -101,7 +101,7 @@
       </div>
     </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white ">
       <div class="container-fluid px-4 d-flex r">
         <a class="navbar-brand me-4" href="/index.html">
           <img
@@ -116,11 +116,11 @@
           </li>
           <li class="nav-item d-flex align-items-center gap-1">
             <a class="nav-link nav-main" href="#features">FEATURES</a>
-            <span class="badge bg-success nav-badge">New</span>
+            <span class="badge nav-badge new">New</span>
           </li>
           <li class="nav-item d-flex align-items-center gap-1">
             <a class="nav-link nav-main" href="#shop">SHOP</a>
-            <span class="badge bg-danger nav-badge">Hot</span>
+            <span class="badge nav-badge hot">Hot</span>
           </li>
           <li class="nav-item">
             <a class="nav-link nav-main" href="#products">PRODUCTS</a>
@@ -142,7 +142,7 @@
           <a href="#search" class="icon-wrap" id="searchIcon"
             ><i class="fa-solid fa-magnifying-glass"></i
           ></a>
-          <a href="#account" class="icon-wrap"
+          <a href="#account" class="icon-wrap" data-bs-toggle="modal" data-bs-target="#loginModal"
             ><i class="fa-regular fa-user"></i
           ></a>
           <a href="#wishlist" class="icon-wrap position-relative"
@@ -211,6 +211,32 @@
       </div>
     </nav>
     <div class="cart-overlay" id="cartOverlay"></div>
+      <!-- Modal Đăng nhập -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="btn-close position-absolute end-0 top-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="text-center mb-4" id="loginModalLabel">SIGN IN</h5>
+        <hr>
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email *" required>
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Password *" required>
+          </div>
+          <div class="mb-3">
+            <a href="#" class="small" style="text-decoration:underline;">Lost your password?</a>
+          </div>
+          <button type="submit" class="btn btn-dark w-100 mb-3"><span>LOGIN</span></button>
+          <button type="button" class="btn btn-light w-100 mb-3"><span>CREATE AN ACCOUNT</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script>
       function toggleDropdown(id) {
         document.querySelectorAll(".topbar-dropdown-menu").forEach((e) => {
