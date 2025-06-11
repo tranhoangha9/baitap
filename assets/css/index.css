@@ -95,43 +95,9 @@ main {
   gap: 0.05rem !important;
   justify-content: flex-start !important;
 }
-.features-section .feature-box i {
-  font-size: 3rem;
-  color: #222;
-  min-width: 48px;
-}
-.features-section .feature-box i:hover {
-  animation: icon-flicker 0.5s cubic-bezier(.4,0,.2,1);
-}
-@keyframes icon-flicker {
-  0% {
-    opacity: 1;
-    transform: scale(0.7);
-  }
-  20% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  40% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  60% {
-    opacity: 1;
-    transform: scale(0.8);
-  }
-  80% {
-    opacity: 1;
-    transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 
 .features-section .letter-title {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #181818;
 }
 .features-section .text-muted {
@@ -140,4 +106,23 @@ main {
 .features-section .feature-box {
   justify-content: flex-start !important;
   padding-left: 1.8rem;
+}
+.features-section .feature-box svg {
+  width: 3.7rem;
+  height: 3.7rem;
+  display: inline-block;
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), filter 0.2s;
+}
+.features-section .feature-box svg:hover {
+  animation: icon-flicker 0.5s linear;
+  filter: brightness(1.2);
+  transform: scale(1);
+}
+@keyframes icon-flicker {
+  0% { opacity: 1; transform: scale(0.7); }
+  20% { opacity: 0.7; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1.1); }
+  60% { opacity: 0.5; transform: scale(0.9); }
+  80% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
 }
