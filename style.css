@@ -1,0 +1,101 @@
+.menu-link {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #10121a; /* Đậm màu hơn */
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0 18px;
+}
+.menu-link:hover {
+  color: #1eca9f;
+}
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px; 
+  font-weight: 800; 
+  color: #181c32;
+  line-height: auto; 
+  letter-spacing: -5%; 
+  text-transform: lowercase;
+}
+.icon-link {
+  color: #181c32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 22px;
+  position: relative;
+}
+.icon-link:hover {
+  color: #007bff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  min-height: 80px; 
+}
+.header-menu {
+  display: flex;
+  gap: 0;
+}
+.header-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+    text-align: center;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  margin-left: auto;
+}
+body {
+  background: #fcf9f6;
+}
+.topbar {
+  width: 100%;
+  background: #f73333;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.07;
+  padding: 0;
+}
+.topbar-inner {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+.topbar-inner span {
+  margin: 0 8px;
+}
+.topbar-inner .dot {
+  font-size: 12px;
+  font-weight: 700;
+  vertical-align: middle;
+  margin: 0 6px;
+  line-height: 1;
+}
