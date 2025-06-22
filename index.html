@@ -6,6 +6,7 @@
   <title>Trang chủ mới</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
@@ -13,7 +14,6 @@
   <header class="bg-light">
     <div class="container" style="max-width:1920px; width: 100%;">
       <div class="header-inner">
-        <!-- Left: Menu -->
         <nav class="header-menu ms-3" >
           <a href="#" class="menu-link">Demo</a>
           <a href="#" class="menu-link">Shop</a>
@@ -23,11 +23,9 @@
           <a href="#" class="menu-link">Features</a>
           <a href="#" class="menu-link">Blog</a>
         </nav>
-        <!-- Center: Logo -->
         <div class="header-logo">
           <span class="logo-text">kalles</span>
         </div>
-        <!-- Right: Icons -->
         <div class="header-icons me-5" >
           <a href="#" class="icon-link" title="Search">
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -181,7 +179,7 @@
   <section class="banner-section">
     <div class="container">
       <div class="banner-container">
-        <div class="banner-item" style="background:#f3fafb;">
+        <div class="banner-item">
           <div class="banner-text-box">
             <span class="banner-subtitle">Happy Women Day</span>
             <h2 class="banner-title">SALE OFF 50%</h2>
@@ -191,7 +189,7 @@
             <img src="assets/img/banner1.png" alt="Banner 1" class="banner-img" />
           </div>
         </div>
-        <div class="banner-item" style="background:#fdf5ee;">
+        <div class="banner-item">
           <div class="banner-text-box">
             <span class="banner-subtitle">Lookbook Collection</span>
             <h2 class="banner-title">HUGE SALE</h2>
@@ -208,11 +206,11 @@
   <!-- Section: Trending Products -->
   <section class="trending-section">
     <div class="trending-container">
-      <div class="trending-header" style="margin-bottom:35px;">
+      <div class="trending-header">
         <div class="trending-title text-center">Trending Products</div>
         <div class="trending-subtitle text-center">Here's some of our most popular products people are in love with.</div>
       </div>
-      <div class="trending-list" style="margin-bottom:30px;">
+      <div class="trending-list" >
         <div class="trending-item">
           <img class="trending-img" src="assets/img/arrival1.png" alt="Herman Shoulder Bag">
           <div class="trending-name">Herman Shoulder Bag</div>
@@ -257,6 +255,93 @@
     </div>
   </section>
 
+  <!-- Section: Featured Items -->
+  <section class="featured-section">
+    <div class="container featured-container">
+      <div class="featured-content">
+        <div class="featured-slider-outer">
+          <div class="featured-title text-center">Featured Items</div>
+          <div class="featured-slider" data-flickity='{"cellAlign": "left", "contain": false, "pageDots": true, "prevNextButtons": true, "draggable": false, "groupCells": 1, "cellSpacing": 0}'>
+            <div class="featured-cell text-center">
+              <div class="featured-img-wrapper"><img src="assets/img/features_item1.png" alt="Ashlie Crossbody Bag" class="featured-img"></div>
+              <div class="featured-name">Ashlie Crossbody Bag</div>
+              <div class="featured-price">$81.00</div>
+            </div>
+            <div class="featured-cell text-center">
+              <div class="featured-img-wrapper"><img src="assets/img/features_item1.png" alt="Ashlie Crossbody Bag" class="featured-img"></div>
+              <div class="featured-name">Ashlie Crossbody Bag</div>
+              <div class="featured-price">$81.00</div>
+            </div>
+            <div class="featured-cell text-center">
+              <div class="featured-img-wrapper"><img src="assets/img/features_item1.png" alt="Ashlie Crossbody Bag" class="featured-img"></div>
+              <div class="featured-name">Ashlie Crossbody Bag</div>
+              <div class="featured-price">$81.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-image">
+          <img src="assets/img/features_itemBanner.png" alt="Shoulder Bags" class="featured-right-img">
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Instagram Shop -->
+  <section class="instagram-shop-section">
+    <div class="instagram-shop-header">
+      <h3 class="instagram-shop-title">Shop Instagram</h3>
+      <div class="instagram-shop-subtitle">Inspire and let yourself be inspired, from one unique fashion to another.</div>
+    </div>
+    <div class="instagram-shop-gallery">
+      <img src="assets/img/instagramshop1.png" alt="Instagram 1" class="instagram-shop-img">
+      <img src="assets/img/instagramshop1.png" alt="Instagram 2" class="instagram-shop-img">
+      <img src="assets/img/instagramshop1.png" alt="Instagram 3" class="instagram-shop-img">
+      <img src="assets/img/instagramshop1.png" alt="Instagram 4" class="instagram-shop-img">
+      <img src="assets/img/instagramshop1.png" alt="Instagram 5" class="instagram-shop-img">
+      <img src="assets/img/instagramshop1.png" alt="Instagram 6" class="instagram-shop-img">
+      <img src="assets/img/instagramshop1.png" alt="Instagram 7" class="instagram-shop-img">
+    </div>
+  </section>
+  <!-- Section: Support Box -->
+  <section class="support-box-section">
+    <div class="support-box-container">
+      <div class="support-box-col">
+        <div class="support-box-icon">
+          <i class="fa-solid fa-message"></i>
+        </div>
+        <div class="support-box-content">
+          <div class="support-box-title">Need Help?</div>
+          <div class="support-box-subtitle">Chat with one of our customer service reps</div>
+        </div>
+        <button class="support-box-btn">Chat now</button>
+      </div>
+      <div class="support-box-col">
+        <div class="support-box-icon">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <div class="support-box-content">
+          <div class="support-box-title">Call Us - 1-800-123-4567</div>
+          <div class="support-box-subtitle">We're here to answer your questions</div>
+        </div>
+        <div class="support-box-socials">
+          <a href="#" class="support-social"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="support-social"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="support-social"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="support-social"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="support-box-col">   
+        <div class="support-box-icon">
+           <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="support-box-content">
+          <div class="support-box-title">Store Locator</div>
+          <div class="support-box-subtitle">Explore a retail store or outlet near you.</div>
+        </div>
+        <button class="support-box-btn">Find a store</button>
+      </div>
+    </div>
+  </section>
   <!-- Footer -->
   <footer>
       <div class="footer-column">
@@ -330,6 +415,7 @@
           <a href="#">Blog</a>
       </div>
   </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
