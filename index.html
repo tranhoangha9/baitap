@@ -14,7 +14,12 @@
   <header class="bg-light">
     <div class="container" style="max-width:1920px; width: 100%;">
       <div class="header-inner">
-        <nav class="header-menu ms-3" >
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="header-menu ms-3" id="headerMenu">
           <a href="#" class="menu-link">Demo</a>
           <a href="#" class="menu-link">Shop</a>
           <a href="#" class="menu-link">Products</a>
@@ -45,6 +50,9 @@
       </div>
     </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
 
   <!-- Slider Section -->
   <section class="main-slider">
@@ -109,64 +117,124 @@
         <div class="new-arrivals-desc">Here's some of our most popular products people are in love with.</div>
       </div>
       <div class="new-arrivals-content">
-        <div class="new-arrivals-slider" data-flickity='{"cellAlign": "left", "contain": true, "pageDots": true, "prevNextButtons": false, "groupCells": 4, "cellSpacing": 20}'>
+        <div class="new-arrivals-slider">
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival1.png" alt="Herman Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival1.png" alt="Herman Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Herman Shoulder Bag</div>
             <div class="arrival-price"><ins class="price-gray">$65.00</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival2.png" alt="Jana Hollow Out Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival2.png" alt="Jana Hollow Out Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Jana Hollow Out Shoulder Bag</div>
             <div class="arrival-price"><del>$60.00</del> <ins class="price-orange">$45.00</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival3.png" alt="Elise Top Handle Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival3.png" alt="Elise Top Handle Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Elise Top Handle Bag</div>
             <div class="arrival-price"><del>$105.97</del> <ins class="price-orange">$95.07</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival4.png" alt="Milla Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival4.png" alt="Milla Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Milla Shoulder Bag</div>
             <div class="arrival-price"><ins class="price-gray">$75.00</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival1.png" alt="Herman Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival1.png" alt="Herman Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Herman Shoulder Bag</div>
             <div class="arrival-price"><ins class="price-gray">$65.00</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival2.png" alt="Jana Hollow Out Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival2.png" alt="Jana Hollow Out Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Jana Hollow Out Shoulder Bag</div>
             <div class="arrival-price"><del>$60.00</del> <ins class="price-orange">$45.00</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival3.png" alt="Elise Top Handle Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival3.png" alt="Elise Top Handle Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Elise Top Handle Bag</div>
             <div class="arrival-price"><del>$105.97</del> <ins class="price-orange">$95.07</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival4.png" alt="Milla Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival4.png" alt="Milla Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Milla Shoulder Bag</div>
             <div class="arrival-price"><ins class="price-gray">$75.00</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival1.png" alt="Herman Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival1.png" alt="Herman Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Herman Shoulder Bag</div>
             <div class="arrival-price"><ins class="price-gray">$65.00</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival2.png" alt="Jana Hollow Out Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival2.png" alt="Jana Hollow Out Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Jana Hollow Out Shoulder Bag</div>
             <div class="arrival-price"><del>$60.00</del> <ins class="price-orange">$45.00</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival3.png" alt="Elise Top Handle Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival3.png" alt="Elise Top Handle Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Elise Top Handle Bag</div>
             <div class="arrival-price"><del>$105.97</del> <ins class="price-orange">$95.07</ins></div>
           </div>
           <div class="arrival-cell text-center">
-            <img src="assets/img/arrival4.png" alt="Milla Shoulder Bag" class="arrival-img">
+            <div class="arrival-img-wrapper">
+              <img src="assets/img/arrival4.png" alt="Milla Shoulder Bag" class="arrival-img">
+              <div class="arrival-view-icon">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
             <div class="arrival-name">Milla Shoulder Bag</div>
             <div class="arrival-price"><ins class="price-gray">$75.00</ins></div>
           </div>
@@ -212,42 +280,82 @@
       </div>
       <div class="trending-list" >
         <div class="trending-item">
-          <img class="trending-img" src="assets/img/arrival1.png" alt="Herman Shoulder Bag">
+          <div class="trending-img-wrapper">
+            <img class="trending-img" src="assets/img/arrival1.png" alt="Herman Shoulder Bag">
+            <div class="trending-view-icon">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
           <div class="trending-name">Herman Shoulder Bag</div>
           <div class="trending-price"><ins class="price-gray">$65.00</ins></div>
         </div>
         <div class="trending-item">
-          <img class="trending-img" src="assets/img/arrival2.png" alt="Jana Hollow Out Shoulder Bag">
+          <div class="trending-img-wrapper">
+            <img class="trending-img" src="assets/img/arrival2.png" alt="Jana Hollow Out Shoulder Bag">
+            <div class="trending-view-icon">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
           <div class="trending-name">Jana Hollow Out Shoulder Bag</div>
           <div class="trending-price"><del>$60.00</del> <ins class="price-orange">$45.00</ins></div>
         </div>
         <div class="trending-item">
-          <img class="trending-img" src="assets/img/arrival3.png" alt="Elise Top Handle Bag">
+          <div class="trending-img-wrapper">
+            <img class="trending-img" src="assets/img/arrival3.png" alt="Elise Top Handle Bag">
+            <div class="trending-view-icon">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
           <div class="trending-name">Elise Top Handle Bag</div>
           <div class="trending-price"><del>$105.07</del> <ins class="price-orange">$95.07</ins></div>
         </div>
         <div class="trending-item">
-          <img class="trending-img" src="assets/img/arrival4.png" alt="Milla Shoulder Bag">
+          <div class="trending-img-wrapper">
+            <img class="trending-img" src="assets/img/arrival4.png" alt="Milla Shoulder Bag">
+            <div class="trending-view-icon">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
           <div class="trending-name">Milla Shoulder Bag</div>
           <div class="trending-price"><ins class="price-gray">$75.00</ins></div>
         </div>
         <div class="trending-item">
-          <img class="trending-img" src="assets/img/arrival1.png" alt="Carly Tote Bag">
+          <div class="trending-img-wrapper">
+            <img class="trending-img" src="assets/img/arrival1.png" alt="Carly Tote Bag">
+            <div class="trending-view-icon">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
           <div class="trending-name">Carly Tote Bag</div>
           <div class="trending-price"><ins class="price-gray">$75.00</ins></div>
         </div>
         <div class="trending-item">
-          <img class="trending-img" src="assets/img/arrival2.png" alt="Asley Shoulder Bag">
+          <div class="trending-img-wrapper">
+            <img class="trending-img" src="assets/img/arrival2.png" alt="Asley Shoulder Bag">
+            <div class="trending-view-icon">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
           <div class="trending-name">Asley Shoulder Bag</div>
           <div class="trending-price"><ins class="price-gray">$81.00</ins></div>
         </div>
         <div class="trending-item">
-          <img class="trending-img" src="assets/img/arrival3.png" alt="Milla Black Tote Bag">
+          <div class="trending-img-wrapper">
+            <img class="trending-img" src="assets/img/arrival3.png" alt="Milla Black Tote Bag">
+            <div class="trending-view-icon">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
           <div class="trending-name">Milla Black Tote Bag</div>
           <div class="trending-price"><del>$105.07</del> <ins class="price-orange">$95.07</ins></div>
         </div>
         <div class="trending-item">
-          <img class="trending-img" src="assets/img/arrival4.png" alt="Elsa Shoulder Bag">
+          <div class="trending-img-wrapper">
+            <img class="trending-img" src="assets/img/arrival4.png" alt="Elsa Shoulder Bag">
+            <div class="trending-view-icon">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
           <div class="trending-name">Elsa Shoulder Bag</div>
           <div class="trending-price"><ins class="price-gray">$75.00</ins></div>
         </div>
@@ -417,5 +525,6 @@
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="/assets/js/script.js"></script>
 </body>
 </html>
